@@ -14,7 +14,6 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-
 # Created by https://www.gitignore.io/api/Intellij
 # Edit at https://www.gitignore.io/?templates=Intellij
 
@@ -98,3 +97,7 @@ fabric.properties
 .idea/sonarlint
 
 # End of https://www.gitignore.io/api/Intellij
+
+*.iml
+.idea
+
