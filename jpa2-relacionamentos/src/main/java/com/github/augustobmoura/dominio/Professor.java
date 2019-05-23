@@ -5,19 +5,17 @@ import lombok.Data;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToMany;
+import java.util.Set;
 
 @Data
 @Entity
-public class Aluno {
+public class Professor {
 
   @Id
   @GeneratedValue
   private Long id;
 
-  @OneToOne(mappedBy = "aluno")
-  private Historico historico;
-
-  private Turma turma;
-
+  @ManyToMany
+  private Set<Turma> turmas;
 }
